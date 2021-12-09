@@ -1,0 +1,37 @@
+html{
+  height: 8000px;
+}
+
+.block {
+  height: 200px;
+  width: 500px;
+  border: 1px solid #333;
+  margin: 15px;
+  padding: 15px;
+}
+
+.static {
+  background-color: #BBBF36;
+
+}
+
+.relative{
+  background-color: #585925;
+  position: relative;
+  left: 400px;
+  top: -25px;
+}
+
+.fixed {
+  background-color: #F2B885;
+  position: fixed;
+  bottom: 150px;
+  right: 5px;
+}
+
+.absolute {
+  background-color: #A65D33;
+  position: absolute;
+  top: 10px;
+  left: 800px;
+}

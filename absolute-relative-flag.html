@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+<!-- Custom css (the file I create) always comes last because you want your font awesome css to be read first (more powerful) than your css file -->
+
+  <title>Positioning</title>
+</head>
+
+<body>
+<h1>hello world</h1>
+<div class="flag-pole"></div>
+<div class="flag" div="flag">
+<i class="fa fa-star star-one" aria-hidden="true"></i>
+<i class="fa fa-star star-two" aria-hidden="true"></i>
+<i class="fa fa-star star-three" aria-hidden="true"></i>
+<i class="fa fa-star star-four" aria-hidden="true"></i>
+<img src="img/image.png" alt="unionjack">
+</div>
+<!-- flag div end -->
+<button id="trigger">Play Anthem</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+// alert('hello');
+
+// wait until the document is read
+$(document).ready(function(){
+
+  // Get the trigger or button then add a click event
+  $('#trigger').click(function(){
+    // $('.fa-star').hide(4000);
+      var audio = new Audio('music/anthem.mp3');
+      audio.play();
+  });
+// click function ends
+
+});
+
+// doument.ready ends
+</script>
+</body>
+</html>

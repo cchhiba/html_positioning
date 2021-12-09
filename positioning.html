@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="positioning.css?v=1.0">
+  <title>Positioning</title>
+</head>
+
+<body>
+  <div class="block static">
+  <h4>Static = Default positioning. This Div is static and will stay where you ask it to.</h4>
+
+  </div>
+  <!-- static div ends -->
+  <div class="block absolute">
+  <h4>Absolute</h4>
+  <p>I am postioned to the viewport or window. This div is not great for responsive design. It can have a high z-index and sit above everything else on your web page. Could be used for logo placement at the top of a webpage. A pop up box (asking you to subscribe or sign up). Could also be used inside of a div.</p>
+
+  </div>
+    <!-- Absolute div ends -->
+  <div class="block fixed">
+      <h4>Fixed</h4>
+      <p>I am fixed, even when I scroll, I am positioned relative to the accesskey="" viewport or window. Could be used when creating a 'back to top' button or a nav bar, or for icons.</p>
+  </div>
+    <!-- Fixed div ends -->
+  <div class="block relative">
+      <h4>Relative = Default positioning</h4>
+      <p>I am postioned relative to where I am usually placed. Relative will move in the direction you tell it to. Based on the position it should be normally. It can be used for nav bars. You can use it for an element inside a div container.</p>
+  </div>
+  <!-- Relative div ends -->
+
+<img src="img/position.png" alt="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>
